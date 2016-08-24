@@ -12,7 +12,7 @@ you win!
 
 you will get 3 rolls
 
-######
+###### My Development
 
 This is my first python project after learning python basics at [Treehouse Online Code School](https://teamtreehouse.com)
 
