@@ -2,15 +2,15 @@ import random
 import sys
 import os
 
-# user rolls a dice
-# if number is match - win else try again
 
+# clear screen function
 def clear_screen():
 	if os.name == 'nt':
 		os.system('cls')
 	else:
 		os.system('clear')
 
+# welcome function
 def welcome():
 	clear_screen()
 
@@ -36,8 +36,9 @@ type 'quit' at anytime to exit
 	if start == 'quit':
 		quit()
 	else:
-		return True
+		play(finished)
 
+# quit function
 def quit():
 	clear_screen()
 	print("""
@@ -53,6 +54,7 @@ https://github.com/samuelradford
 		""")
 	sys.exit()
 
+# draw function to draw the game onto the console
 def draw(guesses):
 	clear_screen()
 
@@ -62,6 +64,7 @@ def draw(guesses):
 		print(guess, end=' ')
 	print('\n')
 
+# main game script
 def play(finished):
 	clear_screen()
 	random_num = random.randint(1, 6)
@@ -98,12 +101,10 @@ def play(finished):
 				quit()
 
 
-
+# global commands to set inital game state and run welcome screen
 finished = False
 
 welcome()
-play(finished)
-
 
 
 
