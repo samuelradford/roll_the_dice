@@ -4,6 +4,8 @@
 
 Welcome to Roll The Dice
 
+I have build this app on Python 3 and will not work on lower versions
+
 The game is simple, a number will be picked at random between 1 and 6
 
 you will roll a dice and if your number matches the random number
